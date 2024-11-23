@@ -10,13 +10,14 @@
 - `app.py`: Основният код на приложението
 - `Dockerfile`: Файл за изграждане на Docker образа за приложението
 - `docker-compose.yml`: Файл за стартиране на приложението и MySQL базата данни
+- `README.md`: Информация за репозиторията и инструкции за стартиране на приложението с Docker.
 
 ## Как да стартирате приложението
 
 1. Клонирайте хранилището:
 ```
 git clone https://github.com/TeodorManahilov/containerized-app-with-db.git
-cd <repo_name>
+cd containerized-app-with-db
 ```
 
 Стартирайте Docker контейнерите:
