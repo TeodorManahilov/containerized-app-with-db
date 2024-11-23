@@ -14,20 +14,29 @@
 ## Как да стартирате приложението
 
 1. Клонирайте хранилището:
+```
 git clone https://github.com/TeodorManahilov/containerized-app-with-db.git
 cd <repo_name>
+```
 
 Стартирайте Docker контейнерите:
+```
 docker-compose up --build
+```
 
 Влезте в контейнера на приложението:
+```
 docker exec -it python_app sh
+```
 
 Напишете следните Python команди в контекста на контейнера:
-
-python app.py add "Ivan" 25
+```
+python app.py add Ivan 25
 python app.py list
 python app.py delete 1
+```
 
 За достъп до базата данни:
+```
 docker exec -it mysql_db mysql -uuser -ppassword app_db
+```
